@@ -8,6 +8,17 @@
     .container {
         padding: 0 1rem;
     }
+    .container .anuncioProduto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .anuncioProduto .descricaoProduto .fichaTecnica p {
+        padding: 20px;
+    }   
+    .menu ul{
+        width: 85%!important;
+    }
     .menu ul li {
         width: 3.438rem;
         margin: 0 0 0 10px;
@@ -31,15 +42,19 @@
     .menu ul li{
         text-align: end;
     }
-    .menu ul li ul li{
-        width: 80px;
-        height: 35px;
-        line-height: 35px;
+    .menu ul li ul li {
+        width: 100px;
+        height: 40px;
+        line-height: 30px;
+        padding: 5px;
+    } 
+    .menu ul ul ul {
+        margin: 0 0 0 94px;
     }
-.menu ul ul ul {
-    margin: 0 0 0 80px;
-}
-
+    .mainFooter{
+        width: 80%;
+        margin: 0 auto;
+    }    
 }
 
 @media screen and (min-width:585px){
@@ -47,11 +62,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-}
-@media screen and (min-width:950px){
-    .produtoDestaque {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .menu ul {
+        width: 80%;
+    }
+    .menu ul li ul li {
+        width: 115px!important;
+        padding: 5px;
+    } 
+    .menu ul ul ul {
+        margin: 0 0 0 110px;
     }
 }
 @media screen and (min-width:800px){
@@ -60,6 +79,18 @@
         height: 220px;
     }
     .container .anuncioProduto .descricaoProduto {
+        width: 50%;
+    }
+    .menu ul {
+        width: 65%;
+    }
+}
+@media screen and (min-width:950px){
+    .produtoDestaque {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu ul {
         width: 50%;
     }
 }

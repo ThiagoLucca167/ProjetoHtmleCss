@@ -5,12 +5,12 @@
     font-family: 'Roboto', sans-serif;
     color: #60646b;
 }
+body{
+    background-color: black;
+}
 .container{
     width: 100%;
-    padding: 0 5rem;
-}
-.linha-azul{
-    background-color:black;
+    padding: 1rem 5rem;
 }
 .container .row {
     display: flex;
@@ -33,9 +33,10 @@
 .menu ul {
     z-index: 20;
     list-style: none;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .menu ul li{
     width: 80px;
@@ -81,9 +82,10 @@
 }
 .container .anuncioProduto{
     width: 100%;
-    padding: 0.625rem 0 0 0;
+    padding: 3rem 0 0 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .container .anuncioProduto .descricaoProduto{
     display: grid;
@@ -98,22 +100,27 @@
 }
 .container .anuncioProduto .descricaoProduto .fichaTecnica p{
     text-align: justify;
-    font-size: 0.725rem;
+    font-size: 0.925rem;
     color: #9ea9bb;
+    line-height: 20px;
+}
+.container .anuncioProduto .fotoProduto{
+    padding: 0 0 0 0.625rem;
 }
 .container .anuncioProduto .fotoProduto img{
     width: 325px;
     height: 212px;
-    padding: 0 0 0 0.625rem;
-    
+    border-radius: 0.625rem;
 }
 .destaquesProduto{
-    margin: 0.625rem 0 0 0;
+    margin: 3rem 0;
 }
 .title{
     margin: .975rem 0;
+    text-align: center;
 }
 .imgDestaque{
+    border-radius: .625rem;
     width: 200px;
 }
 .produtoDestaque{
@@ -124,7 +131,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px 0;
+    margin: 25px 0;
 }
 .destaque a{
     width: 80%;
@@ -137,6 +144,8 @@
     display: flex;
     justify-content: space-around;
     padding: 0.925rem 0;
+    width: 50%;
+    margin: 0 auto;
 }
 .mainFooter ul{
     list-style: none;
