@@ -9,7 +9,7 @@
         padding: 0 1rem;
     }
     .menu ul li {
-        width: auto!important;
+        width: 3.438rem;
         margin: 0 0 0 10px;
     }
     .menu ul li a {
@@ -28,8 +28,17 @@
     .destaque a{
         font-size: .825rem;
     }
-    
+    .menu ul li ul li{
+        width: 80px;
+        height: 35px;
+        line-height: 35px;
+    }
+.menu ul ul ul {
+    margin: 0 0 0 80px;
 }
+
+}
+
 @media screen and (min-width:585px){
     .produtoDestaque {
         display: grid;
