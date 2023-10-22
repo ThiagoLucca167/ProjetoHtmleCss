@@ -28,6 +28,9 @@
     .destaque a{
         font-size: .825rem;
     }
+    .menu ul li{
+        text-align: end;
+    }
     .menu ul li ul li{
         width: 80px;
         height: 35px;
